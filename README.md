@@ -74,3 +74,7 @@ curl -X POST http://localhost:5000/api/students \
 ## Postman Collection
 
 Import `postman_collection.json` into Postman to test all endpoints.
+
+---------------------------------------------------------------------------------------------------------------------
+Created By: 
+  [@Monesh Devadiga](https://github.com/Monesh-Devadiga)
