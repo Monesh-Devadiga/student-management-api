@@ -52,7 +52,7 @@ A Node.js + Express + MongoDB REST API for managing students with full CRUD oper
 - `course` - Search by course name (case-insensitive)
 
 ## Request Body Schema
-
+Validation
 ```json
 {
   "name": "string (2-100 chars, required)",
