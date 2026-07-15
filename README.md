@@ -23,7 +23,7 @@ A Node.js + Express + MongoDB REST API for managing students with full CRUD oper
 3. **Configure environment:**
    - Copy `.env.example` to `.env`
    - Update `MONGODB_URI` with your MongoDB connection string
-   - Set desired `PORT`
+   - Set desired `PORT` (For the localhost)
 
 4. **Start the server:**
    ```bash
