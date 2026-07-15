@@ -62,7 +62,7 @@ Input Validation
   "status": "active | inactive | graduated (default: active)"
 }
 ```
-
+ 
 ## Sample Request
 
 ```bash
