@@ -1,0 +1,14 @@
+MongoDB Export Instructions
+==========================
+
+Database: College-Database
+Collection: students
+
+To export using mongodump:
+  mongodump --db College-Database --out ./database-export
+
+To export as JSON using mongoexport:
+  mongoexport --db College-Database --collection students --out ./database-export/students.json --jsonArray
+
+To import into a new database:
+  mongorestore --db College-Database ./database-export/College-Database

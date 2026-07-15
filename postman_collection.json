@@ -1,0 +1,150 @@
+{
+  "info": {
+    "name": "Student Management API",
+    "description": "Collection for Student Management REST API CRUD operations",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Student",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"age\": 20,\n  \"course\": \"Computer Science\",\n  \"status\": \"active\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students"]
+        }
+      }
+    },
+    {
+      "name": "Get All Students",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students"]
+        }
+      }
+    },
+    {
+      "name": "Get Student by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/students/{{studentId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students", "{{studentId}}"]
+        }
+      }
+    },
+    {
+      "name": "Update Student (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"John Updated\",\n  \"email\": \"john.updated@example.com\",\n  \"age\": 21,\n  \"course\": \"Data Science\",\n  \"status\": \"active\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/students/{{studentId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students", "{{studentId}}"]
+        }
+      }
+    },
+    {
+      "name": "Partial Update Student (PATCH)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"course\": \"Mathematics\",\n  \"status\": \"graduated\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/students/{{studentId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students", "{{studentId}}"]
+        }
+      }
+    },
+    {
+      "name": "Delete Student",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5000/api/students/{{studentId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students", "{{studentId}}"]
+        }
+      }
+    },
+    {
+      "name": "Filter Students by Status",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/students?status=active",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students"],
+          "query": [
+            { "key": "status", "value": "active" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Validation Error Example",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"A\",\n  \"email\": \"invalid-email\",\n  \"age\": 200,\n  \"course\": \"\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "students"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "studentId",
+      "value": ""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "_id": { "$oid": "6a5677b18128aa1b7763b112" },
+  "name": "John Doe",
+  "email": "john@example.com",
+  "age": 22,
+  "course": "Engineering",
+  "status": "active",
+  "createdAt": { "$date": { "$numberLong": "0" } },
+  "updatedAt": { "$date": { "$numberLong": "0" } }
+}
