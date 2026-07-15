@@ -38,7 +38,7 @@ A Node.js + Express + MongoDB REST API for managing students with full CRUD oper
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/api/students` | Create a new student |
-| GET | `/api/students` | Get all students (with pagination, filter) |
+| GET | `/api/students` | Get all students |
 | GET | `/api/students/:id` | Get a single student by ID |
 | PUT | `/api/students/:id` | Update a student (full replace) |
 | PATCH | `/api/students/:id` | Partially update a student |
