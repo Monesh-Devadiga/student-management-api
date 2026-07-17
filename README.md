@@ -2,7 +2,7 @@
 
 Live URL: 
 https://student-management-api--moneshkd07.replit.app
-
+ 
 A Node.js + Express + MongoDB REST API for managing students with full CRUD operations, input validation and search/filter capabilities.
 
 ## Tech Stack
