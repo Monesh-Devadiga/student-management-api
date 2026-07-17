@@ -32,7 +32,7 @@ A Node.js + Express + MongoDB REST API for managing students with full CRUD oper
    ```
 
 5. Server runs at `http://localhost:5000`
-
+ 
 ## API Endpoints
 
 | Method | Endpoint | Description |
