@@ -12,7 +12,7 @@ A Node.js + Express + MongoDB REST API for managing students with full CRUD oper
 - **Database:** MongoDB with Mongoose ODM
 - **Validation:** Joi
 - **Environment:** dotenv (.env)
- 
+  
 ## Setup
 
 1. **Clone / Extract** the project
